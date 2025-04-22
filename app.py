@@ -7,5 +7,5 @@ app = Flask(__name__)
 def hello_world():
     return "Hello world test 1"
 
-if __name__ == '__main':
+if __name__ == '__main__':
     app.run(debug =True)
