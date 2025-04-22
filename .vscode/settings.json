@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "undefined/subscriptions/e130c9b7-4c73-4edc-9a83-f88e275f1916/resourceGroups/appsvc_linux_southeastasia/providers/Microsoft.Web/sites/kengdebwebapp",
+  "appService.deploySubpath": "."
+}
