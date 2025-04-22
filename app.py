@@ -8,4 +8,4 @@ def hello_world():
     return "Hello world test 1"
 
 if __name__ == '__main':
-    app.run(debug =)
+    app.run(debug =True)
