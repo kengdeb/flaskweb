@@ -76,6 +76,7 @@
     </style>
   </head>
   <body>
+    <!-- Your comment here
     <div class="container">
       <h1>Upload Excel File</h1>
       <form action="/upload" method="Post" enctype="multipart/form-data">
@@ -91,5 +92,43 @@
       >
       {% endif %}
     </div>
+    -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css"
+      rel="stylesheet"
+    />
+    <script type="module">
+      import { createChat } from "https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js";
+
+      createChat({
+        webhookUrl:
+          "https://kengdeb.app.n8n.cloud/webhook/b860b860-3f58-475b-a183-b5be5c9dfcae/chat",
+        webhookConfig: {
+          method: "POST",
+          headers: {},
+        },
+        target: "#n8n-chat",
+        mode: "fullscreen",
+        chatInputKey: "chatInput",
+        chatSessionKey: "sessionId",
+        metadata: {},
+        showWelcomeScreen: false,
+        defaultLanguage: "en",
+        initialMessages: [
+          "Hi there! 👋",
+          "My name is Log Excellence chatbot related to OTM. How can I assist you today?",
+        ],
+        i18n: {
+          en: {
+            title: "Hi there! 👋",
+            subtitle: "Start a chat. We're here to help you 24/7.",
+            footer: "",
+            getStarted: "New Conversation",
+            inputPlaceholder: "Type your question..",
+          },
+        },
+      });
+    </script>
   </body>
 </html>
